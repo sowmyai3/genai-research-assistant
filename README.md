@@ -48,6 +48,10 @@ assistant_env\Scripts\activate       # Windows
 
 pip install -r requirements.txt
 streamlit run app.py
-
+---
+## Testing
+pip install pytest
+pytest tests/
+---
 
 
