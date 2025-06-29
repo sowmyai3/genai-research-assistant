@@ -1,0 +1,9 @@
+streamlit
+torch          
+transformers
+sentence-transformers
+faiss-cpu
+langchain
+pdfminer.six
+pypdf
+python-dotenv
