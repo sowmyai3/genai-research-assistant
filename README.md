@@ -36,6 +36,18 @@ To build an AI-powered tool that goes beyond basic keyword search or static summ
   - pdfminer.six for PDF parsing
 
 ---
+##  Quick Start
+
+```bash
+git clone https://github.com/sowmyai3/genai-research-assistant.git
+cd genai-research-assistant
+
+python -m venv assistant_env
+assistant_env\Scripts\activate       # Windows
+# source assistant_env/bin/activate  # Mac/Linux
+
+pip install -r requirements.txt
+streamlit run app.py
 
 
 
