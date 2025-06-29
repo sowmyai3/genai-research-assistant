@@ -2,8 +2,11 @@ from backend.summarizer import summarize
 from backend.challenge import evaluate_answer
 
 def test_summary_length():
-    txt = "AI is the field of study that gives computers the ability to learn." * 30
-    assert len(summarize(txt).split()) <= 150
+    text = "AI is transforming the world." * 30
+    summary = summarize(text)
+    assert isinstance(summary, str)
+    assert len(summary.split()) <= 150
 
-def test_eval_exact():
-    assert evaluate_answer("Machine Learning", "machine learning") == " Correct!"
+def test_evaluate_answer():
+    assert evaluate_answer("Yes", "yes") == " Correct!"
+    assert "Incorrect" in evaluate_answer("No", "Yes")
